@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">BlessPlan Digital</title><desc id="desc">Dados claros e sistemas inteligentes</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B1B43"/><stop offset=".58" stop-color="#06132F"/><stop offset="1" stop-color="#030A1B"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#1C65C2" stop-opacity=".55"/><stop offset="1" stop-color="#07142F" stop-opacity="0"/></radialGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#58AAFF"/><stop offset=".45" stop-color="#246DD4"/><stop offset="1" stop-color="#082A6A"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF"/><stop offset=".28" stop-color="#9EADC2"/><stop offset=".5" stop-color="#FAFCFF"/><stop offset=".78" stop-color="#8191A8"/><stop offset="1" stop-color="#E6EDF8"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF0A0"/><stop offset=".3" stop-color="#F1B83A"/><stop offset=".7" stop-color="#C77A0E"/><stop offset="1" stop-color="#FFD767"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="190%"><feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#00030D" flood-opacity=".72"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <ellipse cx="930" cy="300" rx="330" ry="330" fill="url(#halo)"/>
+  <g opacity=".1" stroke="#78B9FF"><path d="M0 105h1200M0 210h1200M0 315h1200M0 420h1200M0 525h1200M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/></g>
+  <g transform="translate(760 84) scale(.72)" filter="url(#shadow)">
+    <path d="M86 168 256 116l170 52v118c0 97-58 163-170 211C144 449 86 383 86 286Z" fill="url(#silver)"/>
+    <path d="M103 181 256 135l153 46v103c0 87-51 147-153 193-102-46-153-106-153-193Z" fill="url(#blue)"/>
+    <path d="M123 197 256 157l133 40v85c0 76-43 130-133 173-90-43-133-97-133-173Z" fill="none" stroke="#C7E0FC" stroke-width="5" opacity=".82"/>
+    <path d="M190 213h76c45 0 72 21 72 55 0 21-11 37-31 46 27 8 42 28 42 55 0 40-31 65-82 65h-77Zm51 43v39h21c17 0 26-7 26-20 0-12-9-19-26-19Zm0 79v55h26c20 0 31-9 31-27 0-19-12-28-32-28Z" fill="url(#silver)"/>
+    <path d="M167 70c0-9 7-16 16-16s16 7 16 16c0 4-2 8-4 11l42 36 18-52c-7-3-12-9-12-17 0-10 8-18 18-18s18 8 18 18c0 8-5 14-12 17l19 52 41-36c-3-3-4-7-4-11 0-9 7-16 16-16s16 7 16 16c0 7-5 13-11 15l-14 78H193l-15-78c-6-2-11-8-11-15Z" fill="url(#gold)"/>
+    <path d="M193 146h127l-4 26c-41 8-79 8-119 0Z" fill="url(#gold)"/>
+  </g>
+  <text x="84" y="208" fill="url(#silver)" font-family="Arial, sans-serif" font-size="70" font-weight="800" letter-spacing="5">BLESSPLAN</text>
+  <text x="89" y="255" fill="#64B7FF" font-family="Arial, sans-serif" font-size="25" font-weight="600" letter-spacing="14">DIGITAL</text>
+  <path d="M88 306h440" stroke="#64B7FF" stroke-width="2" opacity=".45"/>
+  <text x="84" y="388" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="48" font-weight="700">Dados claros.</text>
+  <text x="84" y="449" fill="#AFC0D7" font-family="Arial, sans-serif" font-size="48" font-weight="700">Sistemas inteligentes.</text>
+</svg>
