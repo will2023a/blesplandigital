@@ -120,7 +120,7 @@ function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <a className="brand" href="#inicio" aria-label="BlessPlan Digital, início" onClick={close}>
-          <img src="./logo-mark.svg" alt="" />
+          <img src="./leao-escudo.svg" alt="" />
           <span className="brand-copy"><strong>BLESSPLAN</strong><small>DIGITAL</small></span>
         </a>
         <nav className={open ? 'nav is-open' : 'nav'} aria-label="Navegação principal">
@@ -163,8 +163,7 @@ function Hero() {
           <div className="visual-ring ring-two"></div>
           <div className="visual-glow"></div>
           <div className="logo-stage">
-            <div className="stage-edge"></div>
-            <img src="./logo-mark.svg" alt="Escudo azul com a letra B e coroa dourada, símbolo da BlessPlan Digital" />
+            <img src="./leao-escudo.svg" alt="Leão branco rugindo dentro de um escudo, símbolo da BlessPlan Digital" />
           </div>
           <div className="floating-card card-data"><span className="floating-icon"><Icon name="chart" size={19} /></span><div><small>Dados</small><strong>Decisões claras</strong></div><i className="status-dot"></i></div>
           <div className="floating-card card-code"><span className="floating-icon"><Icon name="code" size={19} /></span><div><small>Tecnologia</small><strong>Sob medida</strong></div></div>
@@ -173,6 +172,40 @@ function Hero() {
         </div>
       </div>
       <a className="scroll-cue" href="#servicos" aria-label="Rolar para serviços"><span></span>EXPLORE</a>
+    </section>
+  )
+}
+
+function Clients() {
+  const clients = [
+    { name: 'Nursing Solutions', logo: './clients/nursing-solutions.png', className: 'client-logo-nursing', url: 'https://www.nursingsolutions.com.br/' },
+    { name: 'CBA', logo: './clients/cba.svg', className: 'client-logo-cba' },
+    { name: 'Polo Frio Refrigerações', logo: './clients/polo-frio.png', className: 'client-logo-polo', url: 'https://will2023a.github.io/sitepolofrio/' },
+    { name: 'NaEscala', logo: './clients/na-escala.png', className: 'client-logo-naescala', url: 'https://www.naescala.com.br/' },
+  ]
+
+  return (
+    <section className="clients" aria-labelledby="clients-title">
+      <div className="container clients-inner">
+        <div className="clients-heading">
+          <span className="clients-line" aria-hidden="true"></span>
+          <p id="clients-title">Empresas que já confiaram em nosso trabalho</p>
+          <span className="clients-line" aria-hidden="true"></span>
+        </div>
+        <ul className="clients-list">
+          {clients.map((client) => (
+            <li className="client-logo-card" key={client.name}>
+              {client.url ? (
+                <a href={client.url} target="_blank" rel="noreferrer" aria-label={`Visitar o site da ${client.name}`}>
+                  <img className={client.className} src={client.logo} alt={client.name} loading="lazy" />
+                </a>
+              ) : (
+                <img className={client.className} src={client.logo} alt={client.name} loading="lazy" />
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }
@@ -325,7 +358,7 @@ function Footer() {
   return (
     <footer>
       <div className="container footer-main">
-        <div className="footer-brand"><a className="brand" href="#inicio"><img src="./logo-mark.svg" alt="" /><span className="brand-copy"><strong>BLESSPLAN</strong><small>DIGITAL</small></span></a><p>Dados, sistemas e automações para empresas que querem evoluir.</p></div>
+        <div className="footer-brand"><a className="brand" href="#inicio"><img src="./leao-escudo.svg" alt="" /><span className="brand-copy"><strong>BLESSPLAN</strong><small>DIGITAL</small></span></a><p>Dados, sistemas e automações para empresas que querem evoluir.</p></div>
         <div className="footer-column"><strong>Navegação</strong><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#tecnologias">Tecnologias</a></div>
         <div className="footer-column"><strong>Soluções</strong><a href="#servicos">Business Intelligence</a><a href="#servicos">Desenvolvimento web</a><a href="#servicos">Automação</a><a href="#servicos">Consultoria em TI</a></div>
         <div className="footer-column"><strong>Contato</strong><a href="tel:+5548988310636">(48) 98831-0636</a><a href="mailto:blesplanDigital@gmail.com">blesplanDigital@gmail.com</a><a href="https://www.instagram.com/blessplan_digital/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
@@ -336,5 +369,5 @@ function Footer() {
 }
 
 export default function App() {
-  return <><Header /><main id="conteudo"><Hero /><Services /><About /><Process /><Projects /><Technologies /><Contact /></main><Footer /></>
+  return <><Header /><main id="conteudo"><Hero /><Clients /><Services /><About /><Process /><Projects /><Technologies /><Contact /></main><Footer /></>
 }

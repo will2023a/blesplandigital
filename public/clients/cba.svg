@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 120" role="img" aria-labelledby="title desc">
+  <title id="title">CBA</title><desc id="desc">Logo CBA em prata, azul e ciano</desc>
+  <defs><linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fbff"/><stop offset=".45" stop-color="#8193a9"/><stop offset=".7" stop-color="#e8eff8"/><stop offset="1" stop-color="#6d8098"/></linearGradient><linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18e0e7"/><stop offset="1" stop-color="#098fc7"/></linearGradient></defs>
+  <g transform="translate(8 9)">
+    <path d="M75 18A43 43 0 1 0 75 85" fill="none" stroke="url(#silver)" stroke-width="13" stroke-linecap="round"/>
+    <path d="M25 59h53M51 18c-10 12-15 25-15 40s5 28 15 40M51 18c10 12 15 25 15 40S61 86 51 98" fill="none" stroke="#1ba6c3" stroke-width="2" opacity=".7"/>
+    <path d="m21 76 17-15 13 8 18-25 15 10" fill="none" stroke="url(#cyan)" stroke-width="4"/><circle cx="38" cy="61" r="3" fill="#16dce4"/><circle cx="69" cy="44" r="3" fill="#16dce4"/>
+  </g>
+  <text x="93" y="91" fill="url(#silver)" font-family="Arial, sans-serif" font-size="88" font-weight="300" letter-spacing="-8">C</text>
+  <text x="148" y="91" fill="url(#cyan)" font-family="Arial, sans-serif" font-size="88" font-weight="400" letter-spacing="-8">B</text>
+  <text x="204" y="91" fill="url(#silver)" font-family="Arial, sans-serif" font-size="88" font-weight="300">A</text>
+</svg>
